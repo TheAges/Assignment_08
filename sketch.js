@@ -123,7 +123,7 @@ push()
     fill("white")
     background(backColorStill);
     textSize(40);
-    text("Please, play this sketch, only on a mobile device",width/2,height/2,width,height*0.7)
+    text("Please, play this sketch only on a mobile device",width/2,height/2,width,height*0.7)
   }
 pop()
 }
