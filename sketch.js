@@ -79,6 +79,7 @@ function setup() {
   createCanvas(innerWidth,innerHeight);
   noFill();
   noStroke();
+  angleMode(DEGREES)
   textFont(lobster);
 
   backColorStill=random(backColor);
@@ -117,9 +118,14 @@ function draw() {
 
   if (modeINSTR==true) {instructions()};
 
-
-
-
+push()
+  if ((width==500)&&(height==500)) {
+    fill("white")
+    background(backColorStill);
+    textSize(40);
+    text("Please, play this sketch, only on a mobile device",width/2,height/2,width,height*0.7)
+  }
+pop()
 }
 
 function touchEnded() {
